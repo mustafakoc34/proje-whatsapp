@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.arka-kutu{
+    position: relative;
+}
+
+.on-kutu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.arka-alan-top{
+    background-color: #009688;
+    height: 15vh;
+}
+
+.ana-alan{
+    background-color: #e6e9e0;
+    height: 85vh;
+}
+
+.on-kutu-chat{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+.chat-top{
+    background-color: #ededed;
+    min-height: 50px;
+}
+
+.profil-pic{
+    width: 40px;
+    height: 40px;
+    margin-top: 6px;
+    object-fit: cover;
+}
+
+.profil-pic-chat{
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+    object-fit: cover;
+}
+
+.chat-list{
+    background-color: #fff;
+    min-height: 600px;
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+
+.chat-table-scroll{
+    overflow-y: scroll;
+    height: 600px;
+    
+}
+
+ul{
+    padding-left: 5px;
+}
+
+ul li{
+    list-style: none;
+    border-bottom: 1px solid #dddcdc;
+    
+}
+
+ul li:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+.chat-area{
+    
+    background-color: #ecebdd;
+    min-height: 600px;
+    position: relative;
+    
+}
+
+.chat-input-area{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ededed;
+    min-height: 80px;
+    width: 100%;
+}
+
+.message-area{
+    overflow-y: scroll;
+    height: 570px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    float: right;
+}
+
+.divElclass{
+    height: 30px;
+    min-width: 100px;
+    background-color: #a0f9a4;
+    color: #4e4e4e;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    
+    
+    justify-content: space-between;
+}
+.divElclass p{
+    padding-right: 10px;
+}
+
+.divElclass span{
+    margin-top: 8px;
+    font-size: 10px;
+    padding-right: 10px;
+    
+}
+
+@media screen and (max-width:600px){
+    .chat-area{
+        display: none;
+    }
+    #right-side-name{
+        display: none;
+    }
+
+    #sohbette-ara{
+        display: none;
+    }
+   
+    
+}
+
+
+@media screen and (max-width:600px){
+    #mobilde{
+    
+    background-color: #a09c9c;
+    height: 65px;
+    align-items: center;
+    }
+    .profil-pic{
+       display: none;
+
+    }
+    .mobilde-gizle{
+        display: none;
+    }
+}
+#mobilde-goster{
+    display: inline-block;
+}
+
+@media screen and (min-width:600px){
+    #mobilde{
+    visibility: hidden;
+    }
+    .mobilde-goster{
+        display: none;
+    }
+    #mobilde-goster{
+        display: none;
+    }
+    
+    
+}
+
+
+
